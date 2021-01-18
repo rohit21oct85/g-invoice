@@ -74,7 +74,7 @@ const generateAccessToken = (user) => {
     return jwt.sign({ 
         id: user._id,  
         role: user.role 
-    }, accessTokenSecret, {expiresIn: '30m'})
+    }, accessTokenSecret, {expiresIn: '60m'})
 }
 const generateRefreshToken = (user) => {
     const refreshTokenSecret = 'KR-invoice-2021';

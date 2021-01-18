@@ -10,7 +10,6 @@ export default function Navigation() {
     useEffect(()=>{
         const name = localStorage.getItem('fullname');
         const isAuth = localStorage.getItem('isLoggedIn');
-        console.log(isAuth, 'name ' + name)
         setFullName(name)
         setLogged(isAuth)
         
@@ -26,7 +25,7 @@ export default function Navigation() {
     }
 return (
 <>
-{!logged && (
+{/* {!logged && (
     <div className="col-lg-12 col-md-12 col-12">
         
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
@@ -49,12 +48,12 @@ return (
                 </Navbar.Collapse>
         </Navbar>
     </div>
- )}
+ )} */}
 
     {logged && (
         <div className="login_menu col-lg-2 col-md-2 col-12" bg="dark" variant="dark" expand="lg">
             <div className="webLogo">
-                LOGO
+            88Invoice
             </div>
             <div className="user_area">
                <div className="user_icon">

@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
                 message: 'Auth failed'
             });
         } else {
-            req.body.id = decoded.id;
+            req.body.user_Id = decoded.id;
             next()
         }
         

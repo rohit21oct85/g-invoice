@@ -1,0 +1,21 @@
+.invoice-home-banner {
+    text-align: center;
+    padding-top: 4em;
+    background-color: #eaeaea;
+}
+
+.banner-cont-sub {
+    width: 50%;
+    margin: auto;
+    padding: 24px 0px;
+    color: #7990a0;
+}
+.banner-img-main {
+    width: 64%;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.banner-img-1 img {
+    width: 100%;
+}

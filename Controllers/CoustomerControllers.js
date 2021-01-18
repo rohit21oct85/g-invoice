@@ -15,7 +15,9 @@ const getCoustomers = async (req, res) =>{
 };
 
 const createCoustomer = async (req, res) =>{
+    
     const body = req.body;
+    
     const newCoustomer = new Coustomer(body);
     try {
         await newCoustomer.save();
@@ -84,10 +86,31 @@ const viewCoustomer = async (req, res) => {
     }
 };
 
+const AllCoustomer = async (req, res) => {
+    try {
+        await Coustomer.find({user_Id: req.body.user_Id}).then( response => {
+            return res.status(200).json({ 
+                response 
+            })
+        }).catch(error => {
+            return res.status(409).json({ 
+                message: error.message
+            })
+        })
+
+    } catch (error) {
+        res.status(409).json({
+            message: "Error occured"
+        });
+    }
+};
+
+
 module.exports = { 
     getCoustomers, 
     createCoustomer, 
     updateCoustomer, 
     deleteCoustomer,
-    viewCoustomer
+    viewCoustomer,
+    AllCoustomer
 }

@@ -6,6 +6,7 @@ const Coustomer = require('../Controllers/CoustomerControllers.js');
 
 router
 .get('/',checkAuth, Coustomer.getCoustomers)
+.get('/my-customer',checkAuth, Coustomer.AllCoustomer)
 .post('/create',checkAuth, Coustomer.createCoustomer)
 .patch('/update/:id',checkAuth, Coustomer.updateCoustomer)
 .delete('/delete/:id', checkAuth, Coustomer.deleteCoustomer)

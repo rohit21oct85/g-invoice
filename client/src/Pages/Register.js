@@ -55,7 +55,8 @@ export default function Register() {
     },[error]);
 
     return (
-        <div className="container">
+        <div className="container mx-auto text-center my-2">
+        <NavLink to="/">ginvoice</NavLink>
            <div className="col-md-4 card p-3" style={{ margin: '2rem auto 1rem auto' }}>
             <h4>Register </h4>   
             {error && (<p style={{ color: 'red' }}>{error}</p>)} 

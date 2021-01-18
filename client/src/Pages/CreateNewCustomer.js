@@ -30,8 +30,8 @@ const [error, setError] = useState(null);
 const [success, setSuccess] = useState(null);
 
 const url = window.location.href;
-useEffect( () => { 
-    api.get('payment-terms').then( response => {
+useEffect( async () => { 
+    await api.get('payment-terms').then( response => {
         const payment  = response.data.payment
         setPaymentTerms(payment)
     });

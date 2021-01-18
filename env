@@ -1,0 +1,2 @@
+MONGO_URI=mongodb+srv://dev_user_01:5NtJenJGf582MugV@cluster0.kv2en.mongodb.net/invoiceDB?retryWrites=true&w=majority
+PORT=5000

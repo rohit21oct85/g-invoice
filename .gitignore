@@ -1,0 +1,10 @@
+client/node_modules/
+node_modules/
+config.js/
+.env/
+.idea/
+.vs/
+.env
+.pk
+.pem
+.pub

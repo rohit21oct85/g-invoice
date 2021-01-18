@@ -1,1 +1,1 @@
-export const REACT_API_URL = 'http://localhost:5000/api/v1/'
+export const REACT_API_URL = 'https://g-invoice.herokuapp.com/api/v1/'
